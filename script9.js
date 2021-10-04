@@ -28,10 +28,40 @@ if (new Date().getHours() < 18) {
 const hour = new Date().getHours(); 
 let greeting;
 
-if (hour < 18) {
+if (hour < 18) 
+{
   greeting = "Good day";
-} else {
+} 
+else 
+{
   greeting = "Good evening";
 }
 
 document.getElementById("demo44").innerHTML = greeting;
+
+let day;
+switch (new Date().getDay()) 
+{
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Subota";
+	break;
+}
+document.getElementById("demo45").innerHTML = "Today is " + day;
