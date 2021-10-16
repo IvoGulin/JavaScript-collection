@@ -33,5 +33,5 @@ function number()
 }
 function more()
 {
-document.getElementById("demo60").innerHTML = 5 ^ 1;
+	document.getElementById("demo60").innerHTML = 5 ^ 1;
 }
